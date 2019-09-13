@@ -1,0 +1,55 @@
+.help{
+    padding-top: 16vh;
+
+
+}
+
+
+.example-headers-align .mat-expansion-panel-header-title,
+.example-headers-align .mat-expansion-panel-header-description {
+  flex-basis: 0;
+}
+
+.example-headers-align .mat-expansion-panel-header-description {
+  justify-content: space-between;
+  align-items: center;
+}
+.container{
+  background-color:rgb(150, 141, 141);
+  opacity: 7;
+  height: 100vh;
+  padding-left: 15vw;
+  padding-right: 15vw;
+  opacity: 20;
+
+}
+section{
+  margin-left: 16px;
+  margin-right: 16px;
+  overflow: auto;
+}
+
+::-webkit-scrollbar{
+  width: 0px;
+  background: transparent;
+}
+.card {
+  margin-top: 8px;
+  position: relative;
+  width: 250px;
+  box-sizing: border-box;
+  border-style: solid;
+  align-content: center;
+  margin-bottom: 8px;
+  margin-right: 20px;
+  background-color: rgb(84, 92, 90);
+}
+
+mat-form-field {
+  margin-right: 12px;
+}
+mat-accordion
+{
+  background-color: red;
+  margin-top: 50px;
+}

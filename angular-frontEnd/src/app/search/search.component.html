@@ -1,0 +1,26 @@
+<div class="search">
+        <mat-icon width="40" height="40" class="user">account_circle</mat-icon>
+    <div class="center">
+        
+        <form class="searchForm">
+                <mat-icon  class="logo" alt="App Logo">movie</mat-icon>
+                <br>
+                
+            <input class="input" type="text" name="searchtext" [(ngModel)]="searchtext"  >
+            
+            <button  class="micbutton" *ngIf="!speech.listening"
+            [disabled]="speech.listening">
+            <mat-icon (click)="listentext()">mic</mat-icon>
+          </button>
+          <button  class="micbutton" *ngIf="speech.listening"
+            [disabled]="!speech.listening" (click)="speech.abort()">
+            <mat-icon >mic_off</mat-icon>
+           Stop
+          </button>
+            <a routerLink="/content">
+                 <button mat-raised-button >Search</button>
+            </a>
+           <p>{{btnLabel}}</p> 
+        </form>
+    </div>   
+</div>

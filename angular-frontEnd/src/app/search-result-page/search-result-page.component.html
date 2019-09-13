@@ -1,0 +1,80 @@
+<div class="searchResultPage">
+<div class="container">
+    <div class="center" >
+    <form class="searchForm">
+      <input class="input" type="text" name="searchtext" [(ngModel)]="searchtext"  >
+            
+      <button  class="micbutton" *ngIf="!speech.listening"
+      [disabled]="speech.listening">
+      <mat-icon (click)="listentext()">mic</mat-icon>
+    </button>
+    <button  class="micbutton" *ngIf="speech.listening"
+      [disabled]="!speech.listening" (click)="speech.abort()">
+      <mat-icon >mic_off</mat-icon>
+     Stop
+    </button>
+      <a routerLink="/content" (click)="click1()">
+           <button mat-raised-button >Search</button>
+      </a>
+      <p class="listen">{{btnLabel}}</p> 
+  </form>
+</div>   
+
+<div class="p">
+    <p id="rcorners2">Amitabh Bachchan  is an Indian film actor,
+     film producer, television host, occasional playback singer and former politician. .</p>
+    </div>
+
+<div class="peoplesearch">
+    <h4>PEOPLE ALSO SEARCH</h4>
+<mat-accordion>
+    
+       
+        <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    Movies of amithab
+                  </mat-panel-title>
+                  <mat-panel-description>
+                  </mat-panel-description>
+                </mat-expansion-panel-header>
+            
+               
+              </mat-expansion-panel>
+              <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                      <mat-panel-title>
+                        Award winning movies of amitab
+                      </mat-panel-title>
+                      <mat-panel-description>
+                      </mat-panel-description>
+                    </mat-expansion-panel-header>
+                
+                   
+                  </mat-expansion-panel>
+        <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    Top 10 amitab movies
+                  </mat-panel-title>
+                  <mat-panel-description>
+                  </mat-panel-description>
+                </mat-expansion-panel-header>
+            
+               
+              </mat-expansion-panel>
+              <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                      <mat-panel-title>
+                        Dharma Production movies of amitab
+                      </mat-panel-title>
+                      <mat-panel-description>
+                      </mat-panel-description>
+                    </mat-expansion-panel-header>
+                
+                   
+                  </mat-expansion-panel>
+      </mat-accordion>
+    </div>
+</div>
+</div>

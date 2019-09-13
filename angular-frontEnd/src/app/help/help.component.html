@@ -1,0 +1,56 @@
+<app-header></app-header>
+<div class="main">
+  <div class="container">
+<div class="help">
+  
+    <h3 >Images to help with Search Basics</h3>
+<section class="helpCard">
+    
+    <div class="flex-container" fxLayout="row" fxLayoutGap="10px"  >
+       <div class="splash" *ngFor="let image of images">
+          <mat-card fxFlex="80%" fxFlex.xs="80%" class="card">       
+                 <img class="images" mat-card-image src={{image.img}} alt="help">
+             </mat-card>
+        </div>
+    </div>
+  </section>
+
+    <mat-accordion>
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  Browse The Web
+                </mat-panel-title>
+                <mat-panel-description>
+                </mat-panel-description>
+              </mat-expansion-panel-header>
+          <ul>
+              <li><p>How to search</p></li>
+              <li><p>Search results</p></li>
+              <li><p>View of webPage</p></li>
+              <li><p>What you can search for</p></li>
+            </ul>
+             
+            </mat-expansion-panel>
+            <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                      <mat-panel-title>
+                        Search on Your Phone or Tablet
+                      </mat-panel-title>
+                      <mat-panel-description>
+                      </mat-panel-description>
+                    </mat-expansion-panel-header>
+                <ul>
+                    <li><p>Mobile Search Tips</p></li>
+                    <li><p>Search for windows</p></li>
+                    <li><p>First name</p></li>
+                    <li><p>First name</p></li>  
+                  </ul>
+                   
+                  </mat-expansion-panel>
+          </mat-accordion>
+</div>
+</div>
+</div>
+
+<app-footer></app-footer>

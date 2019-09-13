@@ -1,0 +1,43 @@
+.header{
+    color: black;
+}
+.navbar{
+    background-color: rgb(143, 30, 30);
+}
+.logo{
+    padding-left: 11vw;
+    font-size: 70px;
+    color: white;
+}
+.header img{
+    padding-top: 10px;
+    width:70px;
+    height:40;
+}
+
+.user{
+
+    font-size: 70px;
+    color: white;
+    float: right;
+    text-align: right;
+    padding-right: 17vw;
+    padding-bottom: 10vh;
+
+}
+
+.nav-item
+{
+    text-align: center;
+    color: aliceblue;
+    font-size: 4vh;
+    padding: 0;
+}
+
+.title{
+    font-family: 'Lobster', cursive;
+    text-align:center;
+    color: #ffffff;
+    font-size: 6vh;
+    padding-left: 30vw;
+   }
